@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build -- --configuration production"
+  publish = "dist/dine-x/browser"
+
+# Serve index.html for all routes so Angular handles deep links and reloads.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
